@@ -39,6 +39,34 @@ export function Dashboard() {
         </div>
       </div>
 
+      {/* 项目介绍 */}
+      <div className="card bg-gradient-to-r from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 border-primary-200 dark:border-primary-800">
+        <div className="flex items-start space-x-4">
+          <div className="flex-shrink-0">
+            <div className="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center">
+              <Target className="w-6 h-6 text-white" />
+            </div>
+          </div>
+          <div className="flex-1">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              📚 学习目标管理系统
+            </h3>
+            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              一个现代化的全栈学习目标管理应用，帮助你高效规划和追踪学习进度。
+              支持目标设定、任务管理、番茄钟计时、学习记录和数据分析等功能。
+              采用 React + TypeScript + Fastify + SQLite 技术栈构建，提供流畅的用户体验和完善的数据持久化。
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <span className="badge badge-primary text-xs">React 18</span>
+              <span className="badge badge-primary text-xs">TypeScript</span>
+              <span className="badge badge-primary text-xs">Fastify</span>
+              <span className="badge badge-primary text-xs">SQLite</span>
+              <span className="badge badge-primary text-xs">TailwindCSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* 统计卡片 */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div className="card hover:shadow-md transition-shadow">
